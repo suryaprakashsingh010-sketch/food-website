@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script defer src="food.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- HEADER PART -->
+    <header>
+
+        <nav class="navbar">
+            <div class="nav-inner flex between wrapper">
+
+                <!-- <a href="#" class="logo">
+                    <span class="logo-text">Surya</span><span class="logo-dot">foodie.</span>
+
+                </a> -->
+                <a href="#" class="logo" id="logo">
+                    <img src="image copy 2.png" alt="Surya Logo">
+                    <span class="brand">
+                        <span class="brand-main">Surya</span>
+                        <span class="brand-dot">.</span>
+                        <span class="brand-sub">com</span>
+                    </span>
+                </a>
+
+
+
+
+                <!-- DESKTOP MENU -->
+                <!-- <ul class="nevlist flex gap-3">
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Menu</a></li>
+                <li> <a href="#">Services</a></li>
+                <li> <a href="#">About us</a></li>
+                <li> <a href="#">Contacts</a></li>
+
+            </ul> -->
+                <ul class="nevlist flex gap-3">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+
+
+                <div class="desktop-acation flex gap-2">
+                    <a href="#" class="cart-icon">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-value">0</span>
+                    </a>
+
+                    <a href="#" class="btn">
+                        Sign in
+                        &nbsp;
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </a>
+
+                    <a href="#" class="hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+                <!-- MOBILE MENU -->
+                <ul class="mobile-manu">
+                    <!-- <li> <a href="#">Home</a></li>
+                <li> <a href="#">Menu</a></li>
+                <li> <a href="#">Services</a></li>
+                <li> <a href="#">About us</a></li>
+                <li> <a href="#">Contacts</a></li> -->
+
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <li><a href="#location"></a>Location</li>
+                    <li>
+                        <!-- <a href="#" class="btn">
+                        Sign in
+                        &nbsp;
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </a> -->
+
+                        <a href="#" class="btn" id="signInBtn">Sign in
+                            &nbsp;
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </a>
+
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+
+
+
+    </header>
+    <!-- Secation part -->
+    <main>
+        <section id="home">
+            <div class="hero-section flex wrapper">
+                <div class="content">
+                    <h1>Enjoy Your Delicious
+                        <span>Food</span>
+                    </h1>
+                    <p class="para">
+                        We will fill your tummy with delicious <br>
+                        food and fast delivery.
+                    </p>
+                    <div class="flex gap-2">
+                        <a href="#" class="btn">Order now </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="image-container">
+                    <img src="delivery-boy (2).png" alt="">
+                </div> -->
+
+                <div class="image-container">
+                    <!-- <img id="heroImg" src="img1.png"> -->
+                    <img id="heroImg" src="delivery-boy (2).png" class="hero-img">
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="work-section " id="services">
+            <div class="wrapper">
+                <div class="text-center">
+                    <h5>OUR SERVICES</h5>
+                    <h2>How Does It Work</h2>
+                </div>
+
+                <div class="work-grid">
+
+                    <div class="work-card">
+                        <img src="easy-to-order (1).png">
+                        <h3>Easy to Order
+                        </h3>
+                        <p>You only need a few steps to order your favorite food.</p>
+                        <span>01</span>
+                    </div>
+
+                    <div class="work-card">
+                        <img src="fast-delivery (1).png">
+                        <h3>Fast Delivery
+                        </h3>
+                        <p>Your food is delivered hot and fresh within minutes</p>
+                        <span>02</span>
+                    </div>
+
+                    <div class="work-card">
+                        <img src="best-quality (3).png">
+                        <h3>Best Quality
+                        </h3>
+                        <p>We use premium ingredients to ensure the best taste.
+                        </p>
+                        <span>03</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- secation-3 -->
+        <section id="menu">
+            <div class="wrapper p-top">
+                <div class="text-center">
+                    <h5>Our Menu</h5>
+                    <h2>The Most Popular</h2>
+                </div>
+                <div class="card-list text-center flex gap-3">
+
+                    <div class="order-card">
+
+                        <!-- Image -->
+                        <div class="card-image">
+                            <img src="burger (3).png" alt="">
+                        </div>
+
+                        <!-- Info Bar -->
+                        <div class="food-info">
+
+                            <!-- Food Name + Price + Rating -->
+                            <div class="food-title">
+                                <h4>Beef <br>
+                                    Burger</h4>
+                                <span class="rating">4.5</span>
+                            </div>
+
+                            <div class="food-price">
+                                ₹99
+                            </div>
+
+                            <!-- Time & Distance -->
+                            <div class="food-meta">
+                                <span><i class="fa-regular fa-clock"></i> 14–20 mins</span>
+                                <span>•</span>
+                                <span>2 km</span>
+                            </div>
+
+                            <!-- Offer -->
+                            <div class="food-offer">
+                                <i class="fa-solid fa-tag"></i> 40% OFF on select items
+                            </div>
+                            <!-- ADD TO CART BUTTON -->
+                            <button class="add-cart-btn">
+                                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- card-2 -->
+
+                    <div class="order-card">
+
+                        <!-- Image -->
+                        <div class="card-image">
+                            <img src="pizza.png" alt="">
+                        </div>
+
+                        <!-- Info Bar -->
+                        <div class="food-info">
+
+                            <!-- Food Name + Price + Rating -->
+                            <div class="food-title">
+                                <h4>Veg <br>
+                                    Pizza</h4>
+                                <span class="rating">4.1</span>
+                            </div>
+
+                            <div class="food-price">
+                                ₹149
+                            </div>
+
+                            <!-- Time & Distance -->
+                            <div class="food-meta">
+                                <span><i class="fa-regular fa-clock"></i> 15-25 mins</span>
+                                <span>•</span>
+                                <span>3.5 km</span>
+                            </div>
+
+                            <!-- Offer -->
+                            <div class="food-offer">
+                                <i class="fa-solid fa-tag"></i> 50% OFF on select items
+                            </div>
+                            <!-- ADD TO CART BUTTON -->
+                            <button class="add-cart-btn">
+                                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <!-- card-3 -->
+
+
+
+
+
+                    <div class="order-card">
+
+                        <!-- Image -->
+                        <div class="card-image">
+                            <img src="chicken-roll (4).png" alt="">
+                        </div>
+
+                        <!-- Info Bar -->
+                        <div class="food-info">
+
+                            <!-- Food Name + Price + Rating -->
+                            <div class="food-title">
+                                <h4>Veggie Wrap</h4>
+                                <span class="rating">4.6</span>
+                            </div>
+
+                            <div class="food-price">
+                                ₹129
+                            </div>
+
+                            <!-- Time & Distance -->
+                            <div class="food-meta">
+                                <span><i class="fa-regular fa-clock"></i> 40–45 mins</span>
+                                <span>•</span>
+                                <span>10.5 km</span>
+                            </div>
+
+                            <!-- Offer -->
+                            <div class="food-offer">
+                                <i class="fa-solid fa-tag"></i> 40% OFF on select items
+                            </div>
+                            <!-- ADD TO CART BUTTON -->
+                            <button class="add-cart-btn">
+                                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!--  card-4 - -->
+
+
+                    <div class="order-card">
+
+                        <!-- Image -->
+                        <div class="card-image">
+                            <img src="sandwich.png" alt="">
+                        </div>
+
+                        <!-- Info Bar -->
+                        <div class="food-info">
+
+                            <!-- Food Name + Price + Rating -->
+                            <div class="food-title">
+                                <h4>Veg Sandwich</h4>
+                                <span class="rating">4.7</span>
+                            </div>
+
+                            <div class="food-price">
+                                ₹119
+                            </div>
+
+                            <!-- Time & Distance -->
+                            <div class="food-meta">
+                                <span><i class="fa-regular fa-clock"></i> 20–25 mins</span>
+                                <span>•</span>
+                                <span>6.0 km</span>
+                            </div>
+
+                            <!-- Offer -->
+                            <div class="food-offer">
+                                <i class="fa-solid fa-tag"></i> 60% OFF on select items
+                            </div>
+                            <!-- ADD TO CART BUTTON -->
+                            <button class="add-cart-btn">
+                                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- 5 -->
+
+
+                    <div class="order-card">
+
+                        <!-- Image -->
+                        <div class="card-image">
+                            <img src="fried-chicken (1).png" alt="">
+                        </div>
+
+                        <!-- Info Bar -->
+                        <div class="food-info">
+
+                            <!-- Food Name + Price + Rating -->
+                            <div class="food-title">
+                                <h4>Crispy Chicken</h4>
+                                <span class="rating">4.8</span>
+                            </div>
+
+                            <div class="food-price">
+                                ₹199
+                            </div>
+
+                            <!-- Time & Distance -->
+                            <div class="food-meta">
+                                <span><i class="fa-regular fa-clock"></i> 40–45 mins</span>
+                                <span>•</span>
+                                <span>9.5 km</span>
+                            </div>
+
+                            <!-- Offer -->
+                            <div class="food-offer">
+                                <i class="fa-solid fa-tag"></i> 40% OFF on select items
+                            </div>
+                            <!-- ADD TO CART BUTTON -->
+                            <button class="add-cart-btn">
+                                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- 6 -->
+
+                    <div class="order-card">
+
+                        <!-- Image -->
+                        <div class="card-image">
+                            <img src="spaghetti.png" alt="">
+                        </div>
+
+                        <!-- Info Bar -->
+                        <div class="food-info">
+
+                            <!-- Food Name + Price + Rating -->
+                            <div class="food-title">
+                                <h4>Veg Pasta</h4>
+                                <span class="rating">4.5</span>
+                            </div>
+
+                            <div class="food-price">
+                                ₹99
+                            </div>
+
+                            <!-- Time & Distance -->
+                            <div class="food-meta">
+                                <span><i class="fa-regular fa-clock"></i> 30–35 mins</span>
+                                <span>•</span>
+                                <span>5.5 km</span>
+                            </div>
+
+                            <!-- Offer -->
+                            <div class="food-offer">
+                                <i class="fa-solid fa-tag"></i> 40% OFF on select items
+                            </div>
+                            <!-- ADD TO CART BUTTON -->
+                            <button class="add-cart-btn">
+                                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 7 -->
+
+                    <div class="order-card">
+
+                        <!-- Image -->
+                        <div class="card-image">
+                            <img src="food image3.avif" alt="">
+                        </div>
+
+                        <!-- Info Bar -->
+                        <div class="food-info">
+
+                            <!-- Food Name + Price + Rating -->
+                            <div class="food-title">
+                                <h4>Paneer Momos</h4>
+                                <span class="rating">4.6</span>
+                            </div>
+
+                            <div class="food-price">
+                                ₹99
+                            </div>
+
+                            <!-- Time & Distance -->
+                            <div class="food-meta">
+                                <span><i class="fa-regular fa-clock"></i> 20–25 mins</span>
+                                <span>•</span>
+                                <span>3.5 km</span>
+                            </div>
+
+                            <!-- Offer -->
+                            <div class="food-offer">
+                                <i class="fa-solid fa-tag"></i> 40% OFF on select items
+                            </div>
+                            <!-- ADD TO CART BUTTON -->
+                            <button class="add-cart-btn">
+                                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- 8 -->
+
+                    <div class="order-card">
+
+                        <!-- Image -->
+                        <div class="card-image">
+                            <img src="lasagna (2).png" alt="">
+                        </div>
+
+                        <!-- Info Bar -->
+                        <div class="food-info">
+
+                            <!-- Food Name + Price + Rating -->
+                            <div class="food-title">
+                                <h4>Cheese Lasagna</h4>
+                                <span class="rating">4.8</span>
+                            </div>
+
+                            <div class="food-price">
+                                ₹99
+                            </div>
+
+                            <!-- Time & Distance -->
+                            <div class="food-meta">
+                                <span><i class="fa-regular fa-clock"></i> 40–45 mins</span>
+                                <span>•</span>
+                                <span>10.5 km</span>
+                            </div>
+
+                            <!-- Offer -->
+                            <div class="food-offer">
+                                <i class="fa-solid fa-tag"></i> 40% OFF on select items
+                            </div>
+                            <!-- ADD TO CART BUTTON -->
+                            <button class="add-cart-btn">
+                                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Secation-3  -->
+                    <section class="review-section" id="about">
+                        <div class="wrapper  p-top flex gap-3">
+
+                            <div class="image-container">
+                                <img src="delivery-boy-with-phone (4).png">
+
+                            </div>
+
+                            <!-- RIGHT CONTENT -->
+                            <div class="content">
+                                <h5>OUR REVIEWS</h5>
+                                <h2>What Our Customers Say</h2>
+
+                                <div class="review-container">
+                                    <div class="review-swiper-wrap">
+                                        <div class="swiper mySwiper">
+
+                                            <div class="swiper-wrapper">
+
+                                                <div class="swiper-slide">
+                                                    <div class="review-profile flex gap-2">
+                                                        <div class="profile">
+                                                            <img src="suya.jpg">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h4>Surya Prakash Singh</h4>
+                                                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="review-text para">
+                                                        Surya.com is the best! The meals are delicious and the delivery
+                                                        is
+                                                        incredibly fast.
+                                                    </p>
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <div class="review-profile flex gap-2">
+                                                        <div class="profile">
+                                                            <img src="satyam singh.png">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h4>Satyam Singh</h4>
+                                                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="review-text para">
+                                                      Surya.com delivers amazing food with lightning-fast service. Every order is fresh, delicious, and perfectly packed!
+                                                    </p>
+                                                </div>
+
+
+                                                <div class="swiper-slide">
+                                                    <div class="review-profile flex gap-2">
+                                                        <div class="profile">
+                                                            <img src="image copy 3.png">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h4>Akash Dubey
+                                                            </h4>
+                                                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="review-text para">
+                                                        Surya.com has transformed my food ordering experience with its
+                                                        fast delivery and premium quality.
+                                                        Every meal arrives fresh, hot, and perfectly packed—highly
+                                                        recommended!
+                                                    </p>
+                                                </div>
+
+                                                 <div class="swiper-slide">
+                                                    <div class="review-profile flex gap-2">
+                                                        <div class="profile">
+                                                            <img src="image copy 4.png">
+                                                        </div>
+                                                        <div class="info">
+                                                            <h4>Kamlesh Yadav
+ 
+                                                            </h4>
+                                                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="review-text para">
+                                                      Suryafoodie makes food ordering simple, fast, and enjoyable. Great taste and excellent service every time!
+                                                    </p>
+                                                </div>
+
+                                            </div>
+
+                                            <!-- arrows -->
+                                            <div class="flex between">
+                                                <a href="#" class="arrow" id="prev">
+                                                    <i class="fa-solid fa-arrow-left-long"></i>
+                                                </a>
+
+                                                <a href="#" class="arrow" id="next">
+                                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                                </a>
+                                            </div>
+
+                                            <!-- <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div> -->
+
+
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        </div>
+        </div>
+        </section>
+        <!-- secation-4 -->
+        <section id="about">
+            <div class="wrapper p-top ">
+                <div class="app-container flex gap-3">
+                    <div class="app-image">
+                        <img src="mobile-app.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Our Application</h5>
+                        <h2>A Simple Way to <br> Order Your Food</h2>
+                        <p class="para">
+                            Discover food wherever and whenever, <br>
+                            and get your delivery quickly.
+                        </p>
+                        <a href="#" class="btn">Get the App</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- secation-5 -->
+        <section id="contact">
+            <div class="wrapper p-top">
+                <div class="text-center">
+                    <h5>Subscribe</h5>
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p class="para">
+                        We recommend that you subscribe to our newsletter. Enter your email below.
+                    </p>
+
+                    <label class="input-container  flex m-auto">
+                        <input type="email" name="email" id="email" placeholder="Enter your email address"
+                            autocomplete="off">
+                        <a href="#" class="btn">Subscribe</a>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- secation-6 -->
+        <!-- ===== AI CHAT BOT ===== -->
+        <div class="chatbot">
+            <div class="chat-header">
+                <h4>Surya.com AI</h4>
+                <span id="closeChat">✖</span>
+            </div>
+
+            <div class="chat-body" id="chatBody">
+                <div class="bot-msg">👋 Hi! I'm Surya.com AI. How can I help you?</div>
+            </div>
+
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Type your message...">
+                <button id="sendBtn"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+
+        <!-- Floating Button -->
+        <div class="chat-btn" id="openChat">
+            🤖
+        </div>
+
+        <!-- ===== LOCATION SECTION ===== -->
+        <section class="location-section" id="location">
+            <h5>YOUR LOCATION</h5>
+            <h2>We Detect Your Area</h2>
+            <p id="locationText">📍 Detecting your location...</p>
+
+            <!-- Search bar -->
+            <div class="location-search">
+                <div class="search-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" id="searchLocation" placeholder="Search your area...">
+                </div>
+                <button id="findLocation">Find</button>
+            </div>
+
+            <!-- Live location button -->
+            <div class="live-location">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <span>Live Location View</span>
+            </div>
+
+            <!-- Live preview image -->
+            <!-- <div class="location-preview">
+                <img id="locationImage" src="https://via.placeholder.com/800x300?text=Live+Location+Preview">
+
+            </div> -->
+
+            <!-- Map -->
+            <div class="map-card">
+                <div id="map"></div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+    </main>
+    <!-- footer part -->
+    <footer class="footer">
+        <div class="wrapper footer-grid">
+
+            <!-- Brand -->
+            <div class="footer-brand">
+                <h2 class="logo">surya.com</h2>
+                <p>We will fill your tummy with delicious food and fast delivery.</p>
+
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                </div>
+            </div>
+
+            <!-- Our Menu -->
+            <div class="footer-col">
+                <h4>Our Menu</h4>
+                <a href="#">Special</a>
+                <a href="#">Popular</a>
+                <a href="#">Categories</a>
+            </div>
+
+            <!-- Company -->
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="#">Why Foodie</a>
+                <a href="#">Partner with us</a>
+                <a href="#">About us</a>
+                <a href="#">FAQ’s</a>
+            </div>
+
+            <!-- Support -->
+            <div class="footer-col">
+                <h4>Support</h4>
+                <a href="#">Account</a>
+                <a href="#">Support Center</a>
+                <a href="#">Feedback</a>
+                <a href="#">Contacts</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- CART PANEL -->
+    <!-- CART PANEL -->
+    <div class="cart-panel" id="cartPanel">
+        <h3>Your Cart</h3>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-footer">
+            <h4>Total: ₹<span id="cartTotal">0</span></h4>
+            <button id="closeCart">Close</button>
+            <button class="checkout">Checkout</button>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+
+    <script>
+
+
+        const hamburger = document.querySelector(".hamburger");
+        const mobileMenu = document.querySelector(".mobile-manu");
+
+        hamburger.addEventListener("click", () => {
+            mobileMenu.classList.toggle("active");
+        });
+
+        const openChat = document.getElementById("openChat");
+        const closeChat = document.getElementById("closeChat");
+        const chatbot = document.querySelector(".chatbot");
+        const sendBtn = document.getElementById("sendBtn");
+        const userInput = document.getElementById("userInput");
+        const chatBody = document.getElementById("chatBody");
+
+        openChat.onclick = () => {
+            chatbot.style.display = "flex";
+        };
+
+        closeChat.onclick = () => {
+            chatbot.style.display = "none";
+        };
+
+        sendBtn.onclick = sendMessage;
+
+        userInput.addEventListener("keypress", function (e) {
+            if (e.key === "Enter") sendMessage();
+        });
+
+        function sendMessage() {
+            let msg = userInput.value.trim();
+            if (msg === "") return;
+
+            chatBody.innerHTML += `<div class="user-msg">${msg}</div>`;
+            userInput.value = "";
+            chatBody.scrollTop = chatBody.scrollHeight;
+
+            setTimeout(() => {
+                botReply(msg);
+            }, 600);
+        }
+        //  nev-bar-working
+
+        document.getElementById("signInBtn").onclick = () => {
+            alert("Sign in coming soon!");
+        };
+
+        function botReply(message) {
+            message = message.toLowerCase();
+            let reply = "";
+
+            if (message.includes("hello") || message.includes("hi")) {
+                reply = "👋 Hello! Welcome to Foodie. How can I help you?";
+            }
+            else if (message.includes("menu")) {
+                reply = "🍔 Our menu includes Burgers, Pizza, Sandwiches, Chicken Rolls, and more!";
+            }
+            else if (message.includes("price")) {
+                reply = "💰 Our prices start from ₹49 only!";
+            }
+            else if (message.includes("order")) {
+                reply = "🛒 Click any product and press 'Add to Cart' to order.";
+            }
+            else if (message.includes("delivery")) {
+                reply = "🚀 We provide fast delivery within 30 minutes.";
+            }
+            else if (message.includes("contact")) {
+                reply = "📞 You can contact us from the Contacts section on our website.";
+            }
+            else if (message.includes("owner") || message.includes("developer")) {
+                reply = "👨‍💻 This website was developed by Surya Prakash Singh.";
+            }
+            else if (message.includes("payment")) {
+                reply = "💳 We accept Cash, UPI, and Online Payments.";
+            }
+            else if (message.includes("bye")) {
+                reply = "👋 Thank you for visiting Foodie. Have a nice day!";
+            }
+            else {
+                reply = "🤖 I'm Foodie AI. Please ask about menu, order, delivery, or contact.";
+            }
+
+            chatBody.innerHTML += `<div class="bot-msg">${reply}</div>`;
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }
+        window.addEventListener("scroll", () => {
+            const nav = document.querySelector(".navbar");
+            if (window.scrollY > 50) {
+                nav.classList.add("scrolled");
+            } else {
+                nav.classList.remove("scrolled");
+            }
+        });
+
+        // Auto Image Changer
+        const images = [
+
+            "delivery-boy (2).png",
+            "woman2.png",
+            "woman6.png",
+            "woman3.png",
+            // "image4.png",
+            "image copy.png",
+            // "woman2.png",
+            // "woman3.png",
+            // "woman6.png"
+        ];
+
+        let index = 0;
+        const hero = document.getElementById("heroImg");
+
+        setInterval(() => {
+            // Fade out + zoom out
+            hero.style.opacity = 0;
+            hero.style.transform = "scale(0.95)";
+
+            setTimeout(() => {
+                index = (index + 1) % images.length;
+                hero.src = images[index];
+
+                // Fade in + zoom in
+                hero.style.opacity = 1;
+                hero.style.transform = "scale(1)";
+            }, 800);   // same as CSS transition time
+        }, 2500);    // change every 5 seconds
+        const cards = document.querySelectorAll(".work-card");
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = "translateY(0)";
+                }
+            });
+        }, { threshold: 0.3 });
+
+        cards.forEach(card => {
+            card.style.opacity = 0;
+            card.style.transform = "translateY(60px)";
+            observer.observe(card);
+        });
+
+
+        /* SEARCH LOCATION */
+        let map, marker;
+
+        // Get user GPS
+        navigator.geolocation.getCurrentPosition(
+            pos => {
+                let lat = pos.coords.latitude;
+                let lon = pos.coords.longitude;
+                initMap(lat, lon);
+                updateLocation(lat, lon);
+            },
+            () => alert("Please allow location access!")
+        );
+
+        // swiper
+
+        const swiper = new Swiper(".mySwiper", {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: "#next",
+                prevEl: "#prev",
+            },
+        });
+        // Init map
+        function initMap(lat, lon) {
+            map = L.map("map").setView([lat, lon], 15);
+
+            L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                maxZoom: 19
+            }).addTo(map);
+            marker = L.marker([lat, lon]).addTo(map);
+
+            map.on("click", e => {
+                let lat = e.latlng.lat;
+                let lon = e.latlng.lng;
+                marker.setLatLng([lat, lon]);
+                map.setView([lat, lon], 15);
+                updateLocation(lat, lon);
+            });
+        }
+
+        // Search location
+        document.getElementById("findLocation").onclick = () => {
+            let place = document.getElementById("searchLocation").value;
+
+            fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${place}`)
+                .then(res => res.json())
+                .then(data => {
+                    if (data.length > 0) {
+                        let lat = data[0].lat;
+                        let lon = data[0].lon;
+                        map.setView([lat, lon], 15);
+                        marker.setLatLng([lat, lon]);
+                        updateLocation(lat, lon);
+                    } else {
+                        alert("Location not found");
+                    }
+                });
+        };
+
+        // Update name + image
+        function updateLocation(lat, lon) {
+            fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`)
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById("locationText").innerText = "📍 " + data.display_name;
+                    document.getElementById("locationImage").src =
+                        `https://staticmap.openstreetmap.de/staticmap.php?center=${lat},${lon}&zoom=15&size=900x300&markers=${lat},${lon},red-pushpin`;
+                });
+        }
+
+        document.getElementById("locationImage").src =
+            `https://staticmap.openstreetmap.de/staticmap.php?center=${lat},${lon}&zoom=15&size=800x300&markers=${lat},${lon},red-pushpin`;
+
+
+
+        let cartCount = 0;
+        let cartTotal = 0;
+
+        const cartValue = document.querySelector(".cart-value");
+        const cartItems = document.getElementById("cartItems");
+        const cartTotalEl = document.getElementById("cartTotal");
+
+        document.querySelectorAll(".order-card").forEach(card => {
+            const btn = card.querySelector(".add-cart-btn");
+            const name = card.querySelector("h4").innerText;
+            const price = card.querySelector(".food-price").innerText.replace("₹", "");
+
+            btn.onclick = () => {
+                cartCount++;
+                cartValue.innerText = cartCount;
+
+                cartTotal += Number(price);
+                cartTotalEl.innerText = cartTotal;
+
+                cartItems.innerHTML += `
+            <div class="cart-item">
+                <p>${name}</p>
+                <strong>₹${price}</strong>
+            </div>
+        `;
+            }
+        });
+
+        document.querySelectorAll(".nevlist a").forEach(link => {
+            link.addEventListener("click", e => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute("href"));
+                target.scrollIntoView({ behavior: "smooth" });
+            });
+        });
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
