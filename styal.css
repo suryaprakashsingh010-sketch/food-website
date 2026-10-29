@@ -4,9 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    /* background: var(--eye-ball); */
-
 }
 
 :root {
@@ -17,15 +14,24 @@
     --pure-white: #fff;
 }
 
+html {
+    scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 body {
     background: var(--eye-ball);
-
+    font-family: "Poppins", sans-serif;
+    color: var(--lead);
+    overflow-x: hidden;
+    position: relative;
 }
 
 
 /* BASIC STYALING */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 a {
@@ -186,63 +192,102 @@ img {
 
 /* manu */
 /* CSS to make cart slide from right */
-.cart-panel{
+.cart-panel {
     position: fixed;
     top: 0;
-    right: -350px;
-    width: 350px;
+    right: -400px;
+    width: 380px;
+    max-width: 90vw;
     height: 100vh;
-    background: #fff7db;
-    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
-    padding: 20px;
-    transition: 0.4s ease;
+    background: #FFFDF7;
+    box-shadow: -8px 0 30px rgba(0, 0, 0, 0.15);
+    padding: 24px 20px;
+    transition: transform 0.35s ease, right 0.35s ease;
     z-index: 9999;
-    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
 }
 
-.cart-panel.active{
+.cart-panel.active {
     right: 0;
 }
 
-.cart-panel h3{
+.cart-panel h3 {
     text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: var(--lead);
+    border-bottom: 2px solid var(--hint-yellow);
+    padding-bottom: 12px;
+}
+
+#cartItems {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 5px;
     margin-bottom: 15px;
 }
 
-.cart-footer{
-    position: absolute;
-    bottom: 15px;
-    width: 90%;
-}
-
-.cart-footer button{
+.cart-footer {
+    position: static;
     width: 100%;
-    padding: 10px;
-    margin-top: 8px;
-    border-radius: 8px;
-    border: none;
-    background: gold;
-    font-weight: bold;
-}
-.cart-item{
-    display:flex;
-    justify-content:space-between;
-    padding:10px;
-    background:#fff;
-    margin-bottom:8px;
-    border-radius:6px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
 }
 
-/* /// */
+.cart-footer h4 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.cart-footer button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.cart-footer button.checkout {
+    background: linear-gradient(135deg, #F2BD12, #FF9F00);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(242, 189, 18, 0.4);
+}
+
+.cart-footer button.checkout:hover {
+    background: #111;
+    transform: translateY(-2px);
+}
+
+.cart-footer #closeCart {
+    background: #f1f1f1;
+    color: #555;
+}
+
+.cart-footer #closeCart:hover {
+    background: #e2e2e2;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: #fff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    border-left: 4px solid var(--gold-finger);
+}
 
 .mobile-manu {
-  max-height: 0;
-  overflow: hidden;
-  transition: 0.4s;
-}
-
-.mobile-manu.active {
-  max-height: 300px;
+    display: none;
 }
 
 
@@ -371,7 +416,7 @@ p {
 /* secation-1 */
 h5 {
     font-size: 1.2rem;
-    letter-spacing: 2rem;
+    letter-spacing: 3px;
     color: var(--gold-finger);
     text-transform: uppercase;
 }
@@ -591,27 +636,60 @@ h2 {
 
 
 } */
-/* ========== REVIEW STYLE (Guy Hawkins) ========== */
+/* ========== REVIEW STYLE ========== */
 
 .review-section {
     padding-top: 6rem;
+    overflow: hidden;
+}
+
+.review-section h5 {
+    font-size: 0.95rem;
+    letter-spacing: 4px;
+    color: var(--gold-finger);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.review-section h2 {
+    font-size: 3rem;
+    color: var(--lead);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
 }
 
 .review-container {
+    width: 100%;
     max-width: 520px;
-
-
-
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    margin-top: 0 !important;
+    overflow: hidden;
 }
 
-.review-container .flex {
+.review-container .swiper {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0 !important;
+    overflow: hidden;
+}
+
+.review-swiper-wrap {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.review-profile {
+    display: flex;
     align-items: center;
+    gap: 1.2rem;
 }
 
-/* /* Profile Image */
 .review-container .profile {
-    width: 70px;
-    height: 70px;
+    width: 68px;
+    height: 68px;
     border-radius: 50%;
     overflow: hidden;
     flex-shrink: 0;
@@ -621,49 +699,55 @@ h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .review-container h4 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #111;
 }
 
-
 .stars {
     color: var(--gold-finger);
-    font-size: 1.2rem;
-    margin-top: .3rem;
+    font-size: 1.15rem;
+    margin-top: 0.3rem;
 }
 
-*/
-
-/* /* Review text */
 .review-text {
     margin-top: 1.2rem;
-    font-size: 1.15rem;
-    line-height: 1.9rem;
-    color: #777;
+    font-size: 1.12rem;
+    line-height: 1.85;
+    color: #666;
     max-width: 480px;
 }
 
-*/
-
-/* Remove card style */
-.review-container {
-    background: transparent;
-    box-shadow: none;
-    padding: 0;
+.review-section .flex.between {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .arrow {
-    width: 2.5rem;
-    aspect-ratio: 1;
-    border-radius: 100vw;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
     background: var(--gold-finger);
     color: var(--lead);
-    text-align: center;
-    line-height: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.05rem;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.arrow:hover {
+    background: #e59a00;
+    transform: scale(1.08);
 }
 
 /* secation-4 */
@@ -816,6 +900,7 @@ h2 {
     border: none;
     outline: none;
     padding: 1.1rem 1.8rem;
+    text-decoration: none;
     font-size: 1.05rem;
     border-radius: 4rem;
 }
@@ -825,6 +910,7 @@ h2 {
     background: #F2BD12;
     padding: 1rem 2.6rem;
     border-radius: 4rem;
+    text-decoration: none;
     font-size: 1.05rem;
     box-shadow: 0 5px 15px rgba(242, 189, 18, 0.6);
     transition: 0.3s ease;
@@ -853,6 +939,7 @@ h2 {
 .text-center .para {
     max-width: 520px;
     margin: 1.5rem auto 0;
+    text-decoration: none;
     font-size: 1.05rem;
     color: #888;
     line-height: 1.7rem;
@@ -861,11 +948,7 @@ h2 {
 
 
 /* ================= FOOTER ================= */
- 
-.footer{
-    background: #FFF3CC;
-    padding: 4rem 0;
-} */
+
 .footer {
     background: #FFF3CC;
     padding: 3rem 0 4rem;
@@ -1707,4 +1790,641 @@ h5,
 
 .logo {
     transition: all 0.4s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================================
+   RESPONSIVE MEDIA QUERIES (FOR ALL DEVICES)
+   ============================================== */
+
+/* --- Cart Panel Overlay --- */
+.cart-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(3px);
+    z-index: 9998;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+.cart-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* --- Large Desktops & Tablets Landscape (<= 1100px) --- */
+@media (max-width: 1100px) {
+    .gap-3 {
+        gap: 2rem;
+    }
+
+    .hero-section {
+        gap: 2rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .text-center h2 {
+        font-size: 3rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+        gap: 2.5rem;
+    }
+}
+
+/* --- Tablets & Small Laptops (<= 992px) --- */
+@media (max-width: 992px) {
+    .navbar {
+        height: 75px;
+    }
+
+    .nevlist {
+        display: none;
+    }
+
+    .desktop-acation .btn {
+        display: none;
+    }
+
+    .desktop-acation .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        background: #fff;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        cursor: pointer;
+        color: var(--lead);
+        font-size: 1.3rem;
+        transition: 0.3s ease;
+    }
+
+    .desktop-acation .hamburger:hover {
+        background: var(--gold-finger);
+        color: #fff;
+    }
+
+    /* Mobile Menu Drawer (Dropdown underneath navbar) */
+    .mobile-manu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+        position: fixed;
+        top: 75px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: 100vw;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(15px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        padding: 2rem 1.5rem 2.5rem;
+        transform: translateY(-120%);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, visibility 0.3s;
+        z-index: 998;
+        border-bottom: 2px solid var(--gold-finger);
+    }
+
+    .mobile-manu.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .mobile-manu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .mobile-manu li a {
+        display: inline-block;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--lead);
+        padding: 0.5rem 1rem;
+        transition: 0.3s ease;
+    }
+
+    .mobile-manu li a:hover {
+        color: var(--gold-finger);
+        transform: translateY(-2px);
+    }
+
+    .mobile-manu .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.8rem 2.2rem;
+        margin-top: 0.5rem;
+    }
+
+    /* Hero Section Responsive */
+    .hero-section {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 3rem 1.5rem 2rem;
+        min-height: auto;
+    }
+
+    .hero-section .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-section .para {
+        margin: 1.5rem auto;
+    }
+
+    .hero-section .flex.gap-2 {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-section .image-container {
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto 1.5rem;
+    }
+
+    .hero-img {
+        max-height: 400px;
+        object-fit: contain;
+    }
+
+    /* Reviews Section */
+    .review-section {
+        padding-top: 4rem;
+    }
+
+    .review-section .wrapper.flex {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-top: 3rem;
+        gap: 2rem;
+    }
+
+    .review-section .image-container {
+        width: 100%;
+        max-width: 360px;
+        margin-bottom: 1.5rem;
+    }
+
+    .review-section .image-container img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .review-section .content {
+        width: 100%;
+        max-width: 580px;
+        box-sizing: border-box;
+    }
+
+    .review-container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .review-profile {
+        justify-content: center;
+    }
+
+    .review-text {
+        margin: 1.2rem auto 0;
+        max-width: 100%;
+    }
+
+    .review-section .flex.between {
+        justify-content: center;
+        gap: 1.8rem;
+        margin-top: 1.5rem;
+    }
+
+    /* App section */
+    .app-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 3.5rem 2.5rem;
+    }
+
+    .app-image img {
+        width: 320px;
+        max-width: 100%;
+    }
+}
+
+/* --- Mobile Landscape & Standard Phones (<= 768px) --- */
+@media (max-width: 768px) {
+    .p-top {
+        padding-top: 4.5rem;
+    }
+
+    .wrapper {
+        padding-inline: 1.2rem;
+    }
+
+    /* Headings */
+    h1 {
+        font-size: 2.7rem;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 2.3rem !important;
+    }
+
+    .text-center h2 {
+        font-size: 2.3rem !important;
+    }
+
+    .text-center h5 {
+        letter-spacing: 3px;
+        font-size: 0.85rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .text-center {
+        margin-bottom: 2.5rem;
+    }
+
+    /* Services Grid */
+    .work-section {
+        padding: 4.5rem 0;
+    }
+
+    .work-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-top: 2.5rem;
+    }
+
+    .work-card {
+        padding: 2.5rem 1.8rem;
+    }
+
+    /* Menu Cards */
+    .card-list {
+        gap: 1.8rem;
+        margin-top: 2.5rem;
+    }
+
+    .order-card {
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
+    /* Subscribe section */
+    .input-container {
+        flex-direction: column;
+        border-radius: 1.5rem;
+        padding: 0.8rem;
+        gap: 0.8rem;
+        background: #fff;
+    }
+
+    .input-container input {
+        width: 100%;
+        text-align: center;
+        padding: 0.9rem;
+        border-radius: 1.2rem;
+    }
+
+    .input-container .btn {
+        width: 100%;
+        text-align: center;
+        border-radius: 1.2rem;
+        padding: 0.9rem;
+    }
+
+    /* Location Section */
+    .location-section {
+        padding: 50px 15px;
+    }
+
+    .location-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .location-search {
+        flex-direction: column;
+        border-radius: 20px;
+        padding: 12px;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .location-search .search-box {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .location-search input {
+        width: 100%;
+        text-align: left;
+    }
+
+    .location-search button {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    #map {
+        height: 280px;
+    }
+
+    .map-card {
+        width: 100%;
+        margin: 25px auto;
+        border-radius: 18px;
+    }
+
+    /* Reviews Section (Tablets & Phones) */
+    .review-section {
+        padding-top: 3rem;
+    }
+
+    .review-section h5 {
+        font-size: 0.85rem;
+        letter-spacing: 3px;
+        margin-bottom: 0.5rem;
+    }
+
+    .review-section h2 {
+        font-size: 2rem !important;
+        line-height: 1.25;
+        margin-bottom: 1.2rem;
+        word-break: break-word;
+    }
+
+    .review-section .image-container {
+        max-width: 280px;
+        margin-bottom: 1rem;
+    }
+
+    .review-container h4 {
+        font-size: 1.25rem;
+    }
+
+    .stars {
+        font-size: 1rem;
+    }
+
+    .review-text {
+        font-size: 1rem;
+        line-height: 1.6;
+        padding-inline: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .arrow {
+        width: 2.6rem;
+        height: 2.6rem;
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 3rem 0;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-col a:hover {
+        transform: translateY(-2px);
+    }
+
+    /* Cart Panel for Mobile */
+
+    .cart-panel {
+        width: 100%;
+        max-width: 360px;
+        right: -100%;
+    }
+
+    .cart-panel.active {
+        right: 0;
+    }
+
+    /* Floating Chatbot */
+    .chatbot {
+        right: 15px;
+        left: 15px;
+        width: auto;
+        bottom: 85px;
+        max-height: 75vh;
+    }
+
+    .chat-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 52px;
+        height: 52px;
+        font-size: 24px;
+    }
+}
+
+/* --- Extra Small Phones (<= 480px) --- */
+@media (max-width: 480px) {
+    .navbar {
+        height: 68px;
+    }
+
+    .logo img {
+        height: 55px;
+    }
+
+    .brand {
+        font-size: 22px;
+    }
+
+    .desktop-acation {
+        gap: 12px;
+    }
+
+    .hero-section {
+        padding: 2rem 1rem 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    p, .para {
+        text-decoration: none;
+    font-size: 1.05rem;
+        line-height: 1.6rem;
+    }
+
+    .hero-section .flex.gap-2 {
+        gap: 0.8rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .social-icon {
+        width: 2.6rem;
+        line-height: 2.6rem;
+        text-decoration: none;
+    font-size: 1.05rem;
+        border-radius: 0.8rem;
+    }
+
+    .card-image img {
+        width: 12rem;
+    }
+
+    .order-card {
+        padding: 1.8rem 1.2rem;
+    }
+
+    .food-title h4 {
+        font-size: 1.15rem;
+    }
+
+    .food-price {
+        font-size: 1.2rem;
+    }
+
+    .app-container {
+        padding: 2.5rem 1.5rem;
+        border-radius: 2rem;
+    }
+
+    .app-container .content h2 {
+        font-size: 2.2rem;
+    }
+
+    .app-image img {
+        width: 220px;
+    }
+
+    /* Reviews Section (Small Phones) */
+    .review-section {
+        padding-top: 2rem;
+    }
+
+    .review-section .wrapper.flex {
+        padding-top: 1.5rem;
+        gap: 1.2rem;
+    }
+
+    .review-section h5 {
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+        margin-bottom: 0.35rem;
+    }
+
+    .review-section h2 {
+        font-size: 1.6rem !important;
+        line-height: 1.25;
+        margin-bottom: 1rem;
+        padding-inline: 0.3rem;
+    }
+
+    .review-section .image-container {
+        max-width: 220px;
+        margin-bottom: 0.5rem;
+    }
+
+    .review-container .profile {
+        width: 55px;
+        height: 55px;
+    }
+
+    .review-container h4 {
+        font-size: 1.1rem;
+    }
+
+    .stars {
+        font-size: 0.95rem;
+        letter-spacing: 1px;
+    }
+
+    .review-text {
+        font-size: 0.92rem;
+        line-height: 1.55;
+        padding-inline: 0.2rem;
+        margin-top: 0.8rem;
+    }
+
+    .arrow {
+        width: 2.4rem;
+        height: 2.4rem;
+        font-size: 0.95rem;
+    }
+
+    .cart-panel {
+        width: 100%;
+        max-width: 100vw;
+    }
 }

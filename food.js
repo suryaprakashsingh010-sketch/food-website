@@ -1,14 +1,6 @@
-
-new Swiper(".mySwiper", {
-  loop: true,
-  navigation: {
-    nextEl: "#next",
-    prevEl: "#prev",
-  },
-});
 const swiper = new Swiper(".mySwiper", {
   loop: true,
-  spaceBetween: 40,
+  spaceBetween: 20,
   speed: 800,
   grabCursor: true,
 
@@ -22,8 +14,15 @@ const swiper = new Swiper(".mySwiper", {
     prevEl: "#prev",
   },
 
+  breakpoints: {
+    768: {
+      spaceBetween: 40,
+    },
+  },
+
   effect: "slide",
 });
+
 const openChat = document.getElementById("openChat");
 const closeChat = document.getElementById("closeChat");
 const chatbot = document.querySelector(".chatbot");

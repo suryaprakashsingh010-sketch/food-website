@@ -10,6 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script defer src="food.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -46,15 +47,6 @@
 
 
 
-                <!-- DESKTOP MENU -->
-                <!-- <ul class="nevlist flex gap-3">
-                <li> <a href="#">Home</a></li>
-                <li> <a href="#">Menu</a></li>
-                <li> <a href="#">Services</a></li>
-                <li> <a href="#">About us</a></li>
-                <li> <a href="#">Contacts</a></li>
-
-            </ul> -->
                 <ul class="nevlist flex gap-3">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#menu">Menu</a></li>
@@ -82,11 +74,7 @@
                 </div>
                 <!-- MOBILE MENU -->
                 <ul class="mobile-manu">
-                    <!-- <li> <a href="#">Home</a></li>
-                <li> <a href="#">Menu</a></li>
-                <li> <a href="#">Services</a></li>
-                <li> <a href="#">About us</a></li>
-                <li> <a href="#">Contacts</a></li> -->
+
 
                     <li><a href="#home">Home</a></li>
                     <li><a href="#menu">Menu</a></li>
@@ -480,7 +468,7 @@
 
                         <!-- Image -->
                         <div class="card-image">
-                            <img src="food image3.avif" alt="">
+                            <img src="lasagna (2).png" alt="">
                         </div>
 
                         <!-- Info Bar -->
@@ -559,140 +547,130 @@
                         </div>
 
                     </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Section: Reviews -->
+        <section class="review-section" id="reviews">
+            <div class="wrapper p-top flex gap-3">
 
+                <div class="image-container">
+                    <img src="delivery-boy-with-phone (4).png">
 
-                    <!-- Secation-3  -->
-                    <section class="review-section" id="about">
-                        <div class="wrapper  p-top flex gap-3">
+                </div>
 
-                            <div class="image-container">
-                                <img src="delivery-boy-with-phone (4).png">
+                <!-- RIGHT CONTENT -->
+                <div class="content">
+                    <h5>OUR REVIEWS</h5>
+                    <h2>What Our Customers Say</h2>
 
-                            </div>
+                    <div class="review-container">
+                        <div class="review-swiper-wrap">
+                            <div class="swiper mySwiper">
 
-                            <!-- RIGHT CONTENT -->
-                            <div class="content">
-                                <h5>OUR REVIEWS</h5>
-                                <h2>What Our Customers Say</h2>
+                                <div class="swiper-wrapper">
 
-                                <div class="review-container">
-                                    <div class="review-swiper-wrap">
-                                        <div class="swiper mySwiper">
-
-                                            <div class="swiper-wrapper">
-
-                                                <div class="swiper-slide">
-                                                    <div class="review-profile flex gap-2">
-                                                        <div class="profile">
-                                                            <img src="suya.jpg">
-                                                        </div>
-                                                        <div class="info">
-                                                            <h4>Surya Prakash Singh</h4>
-                                                            <div class="stars">⭐⭐⭐⭐⭐</div>
-                                                        </div>
-                                                    </div>
-
-                                                    <p class="review-text para">
-                                                        Surya.com is the best! The meals are delicious and the delivery
-                                                        is
-                                                        incredibly fast.
-                                                    </p>
-                                                </div>
-
-                                                <div class="swiper-slide">
-                                                    <div class="review-profile flex gap-2">
-                                                        <div class="profile">
-                                                            <img src="satyam singh.png">
-                                                        </div>
-                                                        <div class="info">
-                                                            <h4>Satyam Singh</h4>
-                                                            <div class="stars">⭐⭐⭐⭐⭐</div>
-                                                        </div>
-                                                    </div>
-
-                                                    <p class="review-text para">
-                                                      Surya.com delivers amazing food with lightning-fast service. Every order is fresh, delicious, and perfectly packed!
-                                                    </p>
-                                                </div>
-
-
-                                                <div class="swiper-slide">
-                                                    <div class="review-profile flex gap-2">
-                                                        <div class="profile">
-                                                            <img src="image copy 3.png">
-                                                        </div>
-                                                        <div class="info">
-                                                            <h4>Akash Dubey
-                                                            </h4>
-                                                            <div class="stars">⭐⭐⭐⭐⭐</div>
-                                                        </div>
-                                                    </div>
-
-                                                    <p class="review-text para">
-                                                        Surya.com has transformed my food ordering experience with its
-                                                        fast delivery and premium quality.
-                                                        Every meal arrives fresh, hot, and perfectly packed—highly
-                                                        recommended!
-                                                    </p>
-                                                </div>
-
-                                                 <div class="swiper-slide">
-                                                    <div class="review-profile flex gap-2">
-                                                        <div class="profile">
-                                                            <img src="image copy 4.png">
-                                                        </div>
-                                                        <div class="info">
-                                                            <h4>Kamlesh Yadav
- 
-                                                            </h4>
-                                                            <div class="stars">⭐⭐⭐⭐⭐</div>
-                                                        </div>
-                                                    </div>
-
-                                                    <p class="review-text para">
-                                                      Suryafoodie makes food ordering simple, fast, and enjoyable. Great taste and excellent service every time!
-                                                    </p>
-                                                </div>
-
+                                    <div class="swiper-slide">
+                                        <div class="review-profile flex gap-2">
+                                            <div class="profile">
+                                                <img src="suya.jpg">
                                             </div>
-
-                                            <!-- arrows -->
-                                            <div class="flex between">
-                                                <a href="#" class="arrow" id="prev">
-                                                    <i class="fa-solid fa-arrow-left-long"></i>
-                                                </a>
-
-                                                <a href="#" class="arrow" id="next">
-                                                    <i class="fa-solid fa-arrow-right-long"></i>
-                                                </a>
+                                            <div class="info">
+                                                <h4>Surya Prakash Singh</h4>
+                                                <div class="stars">⭐⭐⭐⭐⭐</div>
                                             </div>
+                                        </div>
 
-                                            <!-- <div class="swiper-button-next"></div>
+                                        <p class="review-text para">
+                                            Surya.com is the best! The meals are delicious and the delivery
+                                            is
+                                            incredibly fast.
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="review-profile flex gap-2">
+                                            <div class="profile">
+                                                <img src="satyam singh.png">
+                                            </div>
+                                            <div class="info">
+                                                <h4>Satyam Singh</h4>
+                                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                            </div>
+                                        </div>
+
+                                        <p class="review-text para">
+                                            Surya.com delivers amazing food with lightning-fast service.
+                                            Every order is fresh, delicious, and perfectly packed!
+                                        </p>
+                                    </div>
+
+
+                                    <div class="swiper-slide">
+                                        <div class="review-profile flex gap-2">
+                                            <div class="profile">
+                                                <img src="image copy 3.png">
+                                            </div>
+                                            <div class="info">
+                                                <h4>Akash Dubey
+                                                </h4>
+                                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                            </div>
+                                        </div>
+
+                                        <p class="review-text para">
+                                            Surya.com has transformed my food ordering experience with its
+                                            fast delivery and premium quality.
+                                            Every meal arrives fresh, hot, and perfectly packed—highly
+                                            recommended!
+                                        </p>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="review-profile flex gap-2">
+                                            <div class="profile">
+                                                <img src="image copy 4.png">
+                                            </div>
+                                            <div class="info">
+                                                <h4>Kamlesh Yadav
+
+                                                </h4>
+                                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                            </div>
+                                        </div>
+
+                                        <p class="review-text para">
+                                            Suryafoodie makes food ordering simple, fast, and enjoyable.
+                                            Great taste and excellent service every time!
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <!-- arrows -->
+                                <div class="flex between">
+                                    <a href="javascript:void(0)" class="arrow" id="prev" aria-label="Previous review">
+                                        <i class="fa-solid fa-arrow-left-long"></i>
+                                    </a>
+
+                                    <a href="javascript:void(0)" class="arrow" id="next" aria-label="Next review">
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </a>
+                                </div>
+
+                                <!-- <div class="swiper-button-next"></div>
                                             <div class="swiper-button-prev"></div> -->
 
 
 
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
                             </div>
-
-
-
                         </div>
 
+
+                    </div>
                 </div>
-
             </div>
-        </section>
-
-
-        </div>
-        </div>
         </section>
         <!-- secation-4 -->
         <section id="about">
@@ -967,15 +945,12 @@
         // Auto Image Changer
         const images = [
 
-            "delivery-boy (2).png",
+            "delivery-boy(2).png",
             "woman2.png",
             "woman6.png",
-            "woman3.png",
-            // "image4.png",
-            "image copy.png",
-            // "woman2.png",
             // "woman3.png",
-            // "woman6.png"
+
+
         ];
 
         let index = 0;
